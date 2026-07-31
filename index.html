@@ -1,1070 +1,335 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pep Lluís Negre - Personal Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Pep Lluís Negre - Personal Page" />
-    <meta name="keywords" content="plnegre, robotics, computer vision, underwater robotics, SLAM" />
-    <meta name="author" content="lmtheme" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pep Lluís Negre — Robotics, AI &amp; Computer Vision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Pep Lluís Negre — Robotics engineering leader. Autonomous subsea robotics, AI, SLAM, and computer vision." />
+  <meta name="keywords" content="plnegre, robotics, computer vision, underwater robotics, SLAM, autonomy, AI" />
+  <meta name="author" content="Pep Lluís Negre" />
+  <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/transition-animations.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
 
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="#home"><span class="bracket">&lt;</span>PLN<span class="bracket">/&gt;</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="cta" href="cv/index.html">View CV</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-  </head>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="reveal in">
+        <p class="eyebrow">AI · Robotics · Computer Vision</p>
+        <h1>Pep Lluís Negre</h1>
+        <p class="role">Technical Team Lead — Autonomous Subsea Robotics</p>
+        <p class="lede">I build physical AI for the ocean floor — agentic decision-making, learned behaviours, and semantic perception fused with classical robotics — so machines can inspect critical infrastructure at depth, without a human at the controls.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="cv/index.html">View CV</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/plnegre" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/pep-lluis-negre-a2674336/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:pl.negre@outlook.com" title="Email"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
 
-  <body>
-    <!-- Loading animation -->
-    <div class="preloader">
-      <div class="preloader-animation">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
+      <div class="reveal in">
+        <div class="term">
+          <div class="term-bar">
+            <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+            <span class="term-title">pep@rosenxt:~</span>
+          </div>
+          <pre><span class="tok-com">$</span> whoami
+<span class="tok-str">Pep Lluís Negre</span>
+<span class="tok-str">Technical Team Lead — Robotics &amp; AI</span>
+
+<span class="tok-com">$</span> cat focus.txt
+<span class="tok-key">Agentic Decision-Making</span>
+<span class="tok-key">Learned Behaviours (VLA)</span> · <span class="tok-key">Semantic Perception</span>
+<span class="tok-key">SLAM</span> · <span class="tok-key">Sensor Fusion</span> · <span class="tok-key">Stereo Vision</span>
+
+<span class="tok-com">$</span> ./career <span class="tok-fn">--highlights</span>
+<span class="tok-str">SubSLAM</span> — live 3D mapping
+<span class="tok-str">World-first</span> jacket inspection
+<span class="tok-str">6 patents</span> · <span class="tok-str">4 publications</span></pre>
+        </div>
       </div>
     </div>
-    <!-- /Loading animation -->
+  </section>
 
-    <div id="page" class="page">
-      <!-- Header -->
-      <header id="site_header" class="header mobile-menu-hide">
-        <div class="my-photo">
-          <img src="images/my_photo_25.jpeg" alt="image">
-          <div class="mask"></div>
-        </div>
-
-        <div class="site-title-block">
-          <h1 class="site-title">Pep Lluís Negre</h1>
-          <p class="site-description">Senior Robotics Software Engineer — Production Systems & Hardware Integration</p>
-        </div>
-
-        <!-- Navigation & Social buttons -->
-        <div class="site-nav">
-          <!-- Main menu -->
-          <ul id="nav" class="site-main-menu">
-            <!-- About Me Subpage link -->
-            <li>
-              <a class="pt-trigger" href="#home" data-animation="58" data-goto="1">Home</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
-            </li>
-            <!-- /About Me Subpage link -->
-            <!-- About Me Subpage link -->
-            <li>
-              <a class="pt-trigger" href="#about_me" data-animation="59" data-goto="2">About me</a>
-            </li>
-            <!-- /About Me Subpage link -->
-            <li>
-              <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Resume</a>
-            </li>
-            <li>
-              <a class="pt-trigger" href="#contact" data-animation="59" data-goto="6">Contact</a>
-            </li>
-          </ul>
-          <!-- /Main menu -->
-
-          <!-- Social buttons -->
-          <ul class="social-links">
-            <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
-            <li><a class="tip social-button" href="https://github.com/plnegre" title="Github"><i class="fa fa-github"></i></a></li>
-            <li><a class="tip social-button" href="https://www.linkedin.com/in/pep-lluis-negre-a2674336/" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a></li>
-            <!--<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>-->
-            <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
-            <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
-          </ul>
-          <!-- /Social buttons -->
-        </div>
-        <!-- Navigation & Social buttons -->
-      </header>
-      <!-- /Header -->
-
-      <!-- Mobile Header -->
-      <div class="mobile-header mobile-visible">
-        <div class="mobile-logo-container">
-          <div class="mobile-site-title">Pep Lluís Negre</div>
-        </div>
-
-        <a class="menu-toggle mobile-visible">
-          <i class="fa fa-bars"></i>
-        </a>
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">About</p>
+        <h2>Robotics engineering, end to end</h2>
       </div>
-      <!-- /Mobile Header -->
 
-      <!-- Main Content -->
-      <div id="main" class="site-main">
-        <!-- Page changer wrapper -->
-        <div class="pt-wrapper">
-          <!-- Subpages -->
-          <div class="subpages">
-
-            <!-- Home Subpage -->
-            <section class="pt-page pt-page-1 section-with-bg section-paddings-0" style="background-image: url(images/warehouse_robot.png);" data-id="home">
-              <div class="home-page-block-bg">
-                <div class="mask"></div>
-              </div>
-              <div class="home-page-block">
-                <div class="v-align">
-                  <h2>Pep Lluís Negre</h2>
-                  <div id="rotate" class="text-rotate">
-                    <div>
-                      <p class="home-page-description">Robotics</p>
-                    </div>
-                    <div>
-                      <p class="home-page-description">AI-Driven Autonomy</p>
-                    </div>
-                    <div>
-                      <p class="home-page-description">AI Perception</p>
-                    </div>
-                    <div>
-                      <p class="home-page-description">VLM — VLA</p>
-                    </div>
-                    <div>
-                      <p class="home-page-description">Localisation and Mapping</p>
-                    </div>
-                  </div>
-
-                  <div class="block end" style="text-align: center">
-                    <ul class="info-list">
-                      <!-- <li><span class="title">Age</span><span class="value">31</span></li>
-                      <li><span class="title">e-mail</span><span class="value"><img src="images/eailm_white.png" alt=""></span></li> -->
-                      <!-- <li><span class="title">Phone</span><span class="value">+34 971 172 813</span></li> -->
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- End of Home Subpage -->
-
-            <!-- About Me Subpage -->
-            <section class="pt-page pt-page-2" data-id="about_me">
-              <div class="section-title-block">
-                <h2 class="section-title">About Me</h2>
-                <h5 class="section-description">Robotics enthusiast. Working fast, smart and focused.</h5>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="general-info">
-                    <h3>Principal Robotics, AI & Computer Vision Engineer</h3>
-                    <p>Robotics software engineer with 14+ years of experience delivering production-grade autonomous robotic systems operating in harsh, real-world environments. Drove and delivered two world-leading robotics technologies: SubSLAM, a live 3D mapping system for subsea infrastructure, and the world-first autonomous offshore jacket inspection system.</p>
-                    <p>Extensive background in hardware-software integration, robot bring-up, data collection pipelines, evaluation tooling, and cross-functional collaboration with mechanical, electrical, and operations teams. Named inventor on multiple robotics and perception patents.</p>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                    <h3>Favourite quotes</h3>
-                  </div>
-                  <div class="testimonials owl-carousel">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-item" style="width:100%">
-                      <!-- Testimonial Content -->
-                      <div class="testimonial-content">
-                        <div class="testimonial-text">
-                          <p>"The future belongs to those who believe in the beauty of their dreams."</p>
-                        </div>
-                      </div>
-                      <!-- /Testimonial Content -->
-                      <!-- Testimonial Author -->
-                      <div class="testimonial-credits">
-                        <!-- Picture -->
-                        <div class="testimonial-picture">
-                          <img src="images/testimonials/eleanor.jpeg" alt="">
-                        </div>
-                        <!-- /Picture -->
-                        <!-- Testimonial author information -->
-                        <div class="testimonial-author-info">
-                          <p class="testimonial-author">Eleanor Roosevelt</p>
-                        </div>
-                      </div>
-                      <!-- /Testimonial author information -->
-                    </div>
-                    <!-- End of Testimonial 1 -->
-
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-item">
-                      <!-- Testimonial Content -->
-                      <div class="testimonial-content">
-                        <div class="testimonial-text">
-                          <p>"Todo es del color de la luz que recibe."</p>
-                        </div>
-                      </div>
-                      <!-- /Testimonial Content -->
-                      <!-- Testimonial Author -->
-                      <div class="testimonial-credits">
-                        <!-- Picture -->
-                        <div class="testimonial-picture">
-                          <img src="images/testimonials/kaseo.jpeg" alt="">
-                        </div>
-                        <!-- /Picture -->
-                        <!-- Testimonial author information -->
-                        <div class="testimonial-author-info">
-                          <p class="testimonial-author">Kase.o</p>
-                        </div>
-                      </div>
-                      <!-- /Testimonial author information -->
-                    </div>
-                    <!-- End of Testimonial 2 -->
-
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-item">
-                      <!-- Testimonial Content -->
-                      <div class="testimonial-content">
-                        <div class="testimonial-text">
-                          <p>"Try not to become a man of success, but rather try to become a man of value."</p>
-                        </div>
-                      </div>
-                      <!-- /Testimonial Content -->
-                      <!-- Testimonial Author -->
-                      <div class="testimonial-credits">
-                        <!-- Picture -->
-                        <div class="testimonial-picture">
-                          <img src="images/testimonials/einstein.jpg" alt="">
-                        </div>
-                        <!-- /Picture -->
-                        <!-- Testimonial author information -->
-                        <div class="testimonial-author-info">
-                          <p class="testimonial-author">Albert Einstein</p>
-                        </div>
-                      </div>
-                      <!-- /Testimonial author information -->
-                    </div>
-                    <!-- End of Testimonial 3 -->
-
-                  </div>
-                </div>
-              </div>
-
-              <!-- Services block -->
-              <div class="block-title">
-                <h3>Knowledge</h3>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="service-block">
-                    <div class="service-info">
-                      <i class="service-icon fa fa-location-arrow"></i>
-                      <h4>Autonomy</h4>
-                      <p>AI-driven full autonomy stack. From perception pipelines, robot positioning and control to the high-level decision making and automated decisions.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="service-block">
-                    <div class="service-info">
-                      <i class="service-icon fa fa-map"></i>
-                      <h4>SLAM & 3D Mapping</h4>
-                      <p>Developed and deployed real-time SLAM and localization systems integrated into robotic platforms for field operations.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="service-block">
-                    <div class="service-info">
-                      <i class="service-icon fa fa-video-camera"></i>
-                      <h4>Computer Vision</h4>
-                      <p>Mono/stereo camera calibration. Image features detection and matching. Stereo triangulation. Color enhancement.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="service-block">
-                    <div class="service-info">
-                      <i class="service-icon fa fa-microchip"></i>
-                      <h4>Integration</h4>
-                      <p>Embeded autonomy and mapping solutions. Sensors drivers. Serial, TCP/IP and USB communications.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Services block -->
-
-              <!-- Clients block -->
-              <!-- <div class="block-title">
-                <h3>Clients</h3>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_1.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_2.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_3.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_4.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_5.png" alt="image"></a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-2 subpage-block">
-                  <div class="client_block">
-                    <a href="#" target="_blank"><img src="images/clients/client_6.png" alt="image"></a>
-                  </div>
-                </div>
-              </div> -->
-              <!-- End of Clients block -->
-
-              <!-- Fun facts block -->
-              <div class="block-title">
-                <h3>Some Facts</h3>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block gray-bg">
-                    <i class="pe-7s-icon pe-7s-smile"></i>
-                    <h4>Scientific Contributions</h4>
-                    <span class="fun-value">22</span>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block">
-                    <i class="pe-7s-icon pe-7s-alarm"></i>
-                    <h4>Robotics Experience</h4>
-                    <span class="fun-value">+14 years</span>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block gray-bg">
-                    <i class="pe-7s-icon pe-7s-medal"></i>
-                    <h4>Patents</h4>
-                    <span class="fun-value">5</span>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block">
-                    <i class="pe-7s-icon pe-7s-coffee"></i>
-                    <h4>Coffee Consumed</h4>
-                    <span class="fun-value">15,589</span>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Fun fucts block -->
-            </section>
-            <!-- End of About Me Subpage -->
-
-            <!-- Resume Subpage -->
-            <section class="pt-page pt-page-3" data-id="resume">
-              <div class="section-title-block">
-                <h2 class="section-title">Resume</h2>
-                <h5 class="section-description">+14 Years of Experience in Robotics</h5>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="block-title">
-                    <h3>Education</h3>
-                  </div>
-                  <div class="timeline">
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2008 - 2010</h5>
-                      <h4 class="event-name">Master Degree in Automation and Robotics</h4>
-                      <span class="event-description">University of Catalonia UPC, Spain</span>
-                      <p>Advanced control techniques. Mobile robotics. Computer vision.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2004 - 2008</h5>
-                      <h4 class="event-name">Industrial Engineer in Industrial Electronics</h4>
-                      <span class="event-description">University of the Balearic Islands, Spain</span>
-                      <p>Computer vision. Robotics. Electronics. Control theory.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2002 - 2004</h5>
-                      <h4 class="event-name">Bachelor Degree Scientific-technological</h4>
-                      <span class="event-description">IES Guillem Colom Casasnovas, Spain</span>
-                    </div>
-                  </div>
-
-                  <div class="block-title">
-                    <h3>Patents</h3>
-                  </div>
-                  <div class="timeline">
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2023</h5>
-                      <h4 class="event-name">Computing device and method for mapping</h4>
-                      <span class="event-description"><a href="https://patentimages.storage.googleapis.com/57/5b/6b/83501447cbddb4/EP4471722A1.pdf" target="_blank">EP4471722A1</a></span>
-                      <p>PL. Negre, E.D. Ruiz</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2021</h5>
-                      <h4 class="event-name">Computing device and method for video object detection</h4>
-                      <span class="event-description"><a href="https://register.epo.org/application?number=EP18204705&tab=main" target="_blank">EP3651056</a></span>
-                      <p>I. Wallace, PL. Negre, L. Hill</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2020</h5>
-                      <h4 class="event-name">Subsea surveying system</h4>
-                      <span class="event-description"><a href="GB2582554.pdf" target="_blank">GB2582554</a></span>
-                      <p>I. Wallace, L. Hill, PL. Negre, N. Read</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2020</h5>
-                      <h4 class="event-name">Surveying system for surveying in harsh environments</h4>
-                      <span class="event-description"><a href="EP3712558A1.pdf" target="_blank">EP3712558</a></span>
-                      <p>I. Wallace, L. Hill, PL. Negre, N. Read</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2019</h5>
-                      <h4 class="event-name">Subsea camera module and multi camera system</h4>
-                      <span class="event-description"><a href="https://www.ipo.gov.uk/p-ipsum/Case/PublicationNumber/GB2570748" target="_blank">GB2570748</a></span>
-                      <p>I. Wallace, L. Hill, B. Allen, PL. Negre</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="block-title">
-                    <h3>Experience</h3>
-                  </div>
-                  <div class="timeline">
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2025 - Current</h5>
-                      <h4 class="event-name">Principal Robotics, AI & Computer Vision Engineer</h4>
-                      <span class="event-description">Rosenxt, United Kingdom</span>
-                      <p>Principal Lead for the development of a close-range autonomous inspection solution, driving its architecture and execution end-to-end. Designed hybrid autonomy by combining programmatic behaviours with AI-driven decision-making for robust real-world operation. Developed visual language action models and topological maps to enable intelligent navigation and task execution in complex environments. Delivered a generic, scalable inspection framework adaptable across multiple inspection tasks and diverse asset types.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2024 - 2025</h5>
-                      <h4 class="event-name">High-Level Autonomy Team Lead</h4>
-                      <span class="event-description">ROVCO Subsea, United Kingdom</span>
-                      <p>Leading the development of world-class AI-driven subsea autonomy. Delivered the <a href="https://www.offshore-energy.biz/worlds-first-ai-powered-autonomous-subsea-vehicle-changing-underwater-inspection-and-survey-game-video/" target="_blank">world-first autonomous inspection</a> of an offshore jacket structure. Driving the end-to-end architecture and algorithmic design — from perception and sensor fusion to decision-making and mission autonomy. Leading a multidisciplinary tech team, setting technical direction, and ensuring delivery of high-impact, production-grade solutions.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2020 - 2024</h5>
-                      <h4 class="event-name">Principal Computer Vision Engineer</h4>
-                      <span class="event-description">ROVCO Subsea, United Kingdom</span>
-                      <p>Researching and prototyping emerging computer vision technologies to guide subsea exploration and inspection. Designing and developing the core of Rovco's cutting-edge live 3D vision for ROVs and AUVs. Working on challenging underwater imagery problems to keep improving camera pose accuracy and dense 3D models.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2017 - 2020</h5>
-                      <h4 class="event-name">Senior Computer Vision Engineer</h4>
-                      <span class="event-description">ROVCO Subsea, United Kingdom</span>
-                      <p>Designing online 3D underwater mapping algorithms, based on an accurate Visual-SLAM positioning system and semi-dense 3D reconstructions. Developing cutting-edge solutions for reliable and impressive 3D underwater reconstructions to be executed online during the robot mission. Main contributor and inventor of <a href="https://youtu.be/R4PEVjXsoFY" target="_blank">Rovco's SubSLAM online 3D mapping</a> sensor for subsea infrastructure. Delivering the most advanced subsea stereo camera system up to date.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2012 - 2017</h5>
-                      <h4 class="event-name">Postgraduate Researcher</h4>
-                      <span class="event-description">Systems, Robotics and Vision Group, University of the Balearic Islands, Spain</span>
-                      <p>Co-responsible for the entire platform (software and hardware) of the autonomous underwater robot "Turbot". In charge of the whole localization pipeline based on various sensors: IMU, DVL, USBL, GPS and two stereo cameras. Specialized in stereo localization, loop closing detection, 3D reconstruction and the tools to visualize it. Responsible for the design and development of the operating interface of the vehicle based on HTML5, Google maps API and Rosbridge.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2012 - 2015</h5>
-                      <h4 class="event-name">CEO at Binibook.com</h4>
-                      <p>Lead of the platform to write and distribute books online. In charge of the website and apps developed for iOS and Android. Create value, manage the group and keep developing code in HTML5, Javascript, CSS, Node, Xcode and Java.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2011 - 2012</h5>
-                      <h4 class="event-name">Software Developer</h4>
-                      <span class="event-description">Sampol Comunications S.L.</span>
-                      <p>Developing drivers for IAS/Wonderware, cameras, relies and many other sensors for factories and intelligent houses. Implementing power monitoring systems to improve the building efficiency with powerful web front-ends and databases. Responsible for the project of automatic reading of meters of water and electricity for the Palma de Mallorca Harbour's.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2009 - 2011</h5>
-                      <h4 class="event-name">Control Engineer</h4>
-                      <span class="event-description">Alstom Power S.L.U.</span>
-                      <p>Responsible for the control design and tuning of the wind turbines ECO74 and ECO80. Specialized in system identification and fault-tolerant control in adverse weather conditions.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="block-title">
-                    <h3>Robotics software tools</h3>
-                  </div>
-                  <div class="skills-info">
-                    <h4>ROS2</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-9"></div>
-                    </div>
-
-                    <h4>Linux + shell</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-9"></div>
-                    </div>
-
-                    <h4>NVIDIA Jetson/Xavier</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-8"></div>
-                    </div>
-
-                    <h4>Gazebo / Isaac Simulator</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-9"></div>
-                    </div>
-
-                    <h4>Docker</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-9"></div>
-                    </div>
-
-                    <h4>OpenCV + PCL</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-9"></div>
-                    </div>
-
-                    <h4>G2O + Ceres-Solver</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-8"></div>
-                    </div>
-                  </div>
-
-                  <div class="block-title">
-                    <h3>Coding Skills</h3>
-                  </div>
-                  <div class="skills-info">
-                    <h4>C++</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-9"></div>
-                    </div>
-
-                    <h4>Python</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-9"></div>
-                    </div>
-
-                    <h4>Typescript</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-8"></div>
-                    </div>
-
-                    <h4>PyTorch</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-8"></div>
-                    </div>
-
-                    <h4>TensorFlow</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-8"></div>
-                    </div>
-
-                    <h4>Matlab</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-7"></div>
-                    </div>
-
-                    <h4>HTML + JS + CSS + PHP</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-6"></div>
-                    </div>
-
-                    <h4>C# + Java</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-6"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 col-md-12">
-                  <div class="download-cv-block">
-                    <a class="button" target="_blank" href="plnegre_resume.pdf">Download full CV</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- End Resume Subpage -->
-
-
-            <!-- Portfolio Subpage -->
-            <section class="pt-page pt-page-4" data-id="portfolio">
-              <div class="section-title-block">
-                <h2 class="section-title">Portfolio</h2>
-                <h5 class="section-description">My Best Works</h5>
-              </div>
-
-              <!-- Portfolio Content -->
-              <div class="portfolio-content">
-
-                <!-- Portfolio filter -->
-                <ul id="portfolio_filters" class="portfolio-filters">
-                  <li class="active">
-                    <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="media">Media</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="illustration">Illustration</a>
-                  </li>
-                  <li>
-                    <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
-                  </li>
-                </ul>
-                <!-- End of Portfolio filter -->
-
-                <!-- Portfolio Grid -->
-                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
-                  <!-- Portfolio Item 1 -->
-                  <figure class="item" data-groups='["all", "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/1.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 1 -->
-
-                  <!-- Portfolio Item 2 -->
-                  <figure class="item" data-groups='["all", "video"]'>
-                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
-                      <img src="images/portfolio/2.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Video</small>
-                        <i class="fa fa-video-camera"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 2 -->
-
-                  <!-- Portfolio Item 3 -->
-                  <figure class="item" data-groups='["all","illustration"]'>
-                    <a href="images/portfolio/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                      <img src="images/portfolio/3.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 3 -->
-
-                  <!-- Portfolio Item 4 -->
-                  <figure class="item" data-groups='["all", "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/4.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 4 -->
-
-                  <!-- Portfolio Item 5 -->
-                  <figure class="item" data-groups='["all", "illustration"]'>
-                    <a href="images/portfolio/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
-                      <img src="images/portfolio/5.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 5 -->
-
-                  <!-- Portfolio Item 6 -->
-                  <figure class="item" data-groups='["all", "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/6.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 6 -->
-
-                  <!-- Portfolio Item 7 -->
-                  <figure class="item" data-groups='["all", "video"]'>
-                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi" class="lightbox mfp-iframe">
-                      <img src="images/portfolio/7.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Video</small>
-                        <i class="fa fa-video-camera"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 7 -->
-
-                  <!-- Portfolio Item 8 -->
-                  <figure class="item" data-groups='["all",  "media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/8.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 8 -->
-
-                  <!-- Portfolio Item 9 -->
-                  <figure class="item" data-groups='["all","illustration"]'>
-                    <a href="images/portfolio/9.jpg" class="lightbox" title="Mauris Neque Dolor">
-                      <img src="images/portfolio/9.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 9 -->
-
-                  <!-- Portfolio Item 10 -->
-                  <figure class="item" data-groups='["all", "video"]'>
-                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu" class="lightbox mfp-iframe">
-                      <img src="images/portfolio/10.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Video</small>
-                        <i class="fa fa-video-camera"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 10 -->
-
-                  <!-- Portfolio Item 11 -->
-                  <figure class="item" data-groups='["all","illustration"]'>
-                    <a href="images/portfolio/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                      <img src="images/portfolio/11.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Illustration</small>
-                        <i class="fa fa-image"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 11 -->
-
-                  <!-- Portfolio Item 12 -->
-                  <figure class="item" data-groups='["all","media"]'>
-                    <a class="ajax-page-load" href="portfolio-1.html">
-                      <img src="images/portfolio/12.jpg" alt="">
-                      <div>
-                        <h5 class="name">Project Name</h5>
-                        <small>Media</small>
-                        <i class="fa fa-file-text-o"></i>
-                      </div>
-                    </a>
-                  </figure>
-                  <!-- /Portfolio Item 12 -->
-                </div>
-                <!-- /Portfolio Grid -->
-
-              </div>
-              <!-- /Portfolio Content -->
-
-            </section>
-            <!-- /Portfolio Subpage -->
-
-            <!-- Blog Subpage -->
-            <section class="pt-page pt-page-5" data-id="blog">
-              <div class="section-title-block">
-                <h2 class="section-title">Blog</h2>
-                <h5 class="section-description">My Diary</h5>
-              </div>
-              <div class="blog-masonry">
-                <!-- Blog Post 1 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_1.jpg" alt="blog-post-1" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">6</span><span class="month">Dec</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">Travel</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 1 -->
-
-                <!-- Blog Post 2 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_2.jpg" alt="blog-post-2" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">3</span><span class="month">Nov</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">jQuery</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">One Framework, Every Device</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 2 -->
-
-                <!-- Blog Post 3 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_3.jpg" alt="blog-post-3" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">12</span><span class="month">Oct</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">Sport</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Designed for Everyone, Everywhere</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 3 -->
-
-                <!-- Blog Post 4 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_4.jpg" alt="blog-post-4" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">18</span><span class="month">Aug</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">CSS</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">An Introduction To PostCSS</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 4 -->
-
-                <!-- Blog Post 5 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_5.jpg" alt="blog-post-5" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">2</span><span class="month">Jul</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">CSS3</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Original and Innovative Web Layouts</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 5 -->
-
-                <!-- Blog Post 6 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_6.jpg" alt="blog-post-6" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">8</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">HTML5</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 6 -->
-
-                <!-- Blog Post 7 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_7.jpg" alt="blog-post-7" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">7</span><span class="month">Apr</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">Design</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Navigation for Mega-Sites</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 7 -->
-
-                <!-- Blog Post 8 -->
-                <div class="item">
-                  <div class="blog-card">
-                    <div class="media-block">
-                      <a href="blog-post-1.html">
-                        <img class="post-image img-responsive" src="images/blog/blog_post_8.jpg" alt="blog-post-8" />
-                        <div class="mask"></div>
-                        <div class="post-date"><span class="day">21</span><span class="month">Mar</span><!--<span class="year">2016</span>--></div>
-                      </a>
-                    </div>
-                    <div class="post-info">
-                      <ul class="category">
-                        <li><a href="#">CSS3</a></li>
-                      </ul>
-                      <a href="blog-post-1.html"><h4 class="blog-item-title">Front-End Challenge Accepted: CSS 3D Cube</h4></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Blog Post 8 -->
-              </div>
-            </section>
-            <!-- End Blog Subpage -->
-
-            <!-- Contact Subpage -->
-            <section class="pt-page pt-page-6" data-id="contact">
-              <div class="section-title-block">
-                <h2 class="section-title">Contact</h2>
-                <h5 class="section-description">Get in Touch</h5>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                    <h3>Get in Touch</h3>
-                  </div>
-                  <p>If you would like to find out more about me, my research or my work, please drop me an email.</p>
-                  <div class="contact-info-block">
-                    <div class="ci-icon">
-                      <i class="pe-7s-icon pe-7s-map-marker"></i>
-                    </div>
-                    <div class="ci-text">
-                      <h5>Bunyola, Mallorca, SPAIN</h5>
-                    </div>
-                  </div>
-                  <div class="contact-info-block">
-                    <div class="ci-icon">
-                      <i class="pe-7s-icon pe-7s-mail"></i>
-                    </div>
-                    <div class="ci-text">
-                      <h5><img src="images/eailm.png" alt=""></h5>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                    <h3>Contact Form</h3>
-                  </div>
-                  <form id="contact-form" method="post" action="contact_form/contact_form.php">
-
-                    <div class="messages"></div>
-
-                    <div class="controls">
-                      <div class="form-group">
-                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
-                          <div class="form-control-border"></div>
-                          <i class="form-control-icon fa fa-user"></i>
-                          <div class="help-block with-errors"></div>
-                      </div>
-
-                      <div class="form-group">
-                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
-                          <div class="form-control-border"></div>
-                          <i class="form-control-icon fa fa-envelope"></i>
-                          <div class="help-block with-errors"></div>
-                      </div>
-
-                      <div class="form-group">
-                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
-                          <div class="form-control-border"></div>
-                          <i class="form-control-icon fa fa-comment"></i>
-                          <div class="help-block with-errors"></div>
-                      </div>
-
-                      <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
-
-                      <input type="submit" class="button btn-send" value="Send message">
-                    </div>
-                  </form>
-                </div> -->
-              </div>
-            </section>
-            <!-- End Contact Subpage -->
-
+      <div class="about-grid reveal">
+        <div>
+          <p>I'm a robotics &amp; AI engineering leader with <strong>14+ years</strong> building production-grade autonomous systems for harsh, real-world environments — underwater, unsupervised, and at depth.</p>
+          <p>My current focus is physical AI for subsea robotics — <strong>agentic decision-making</strong>, <strong>learned behaviours (VLA models)</strong>, and <strong>semantic perception</strong> — setting technical strategy and leading a cross-functional team for Rosenxt's autonomous subsea inspection programme. Previously drove two world-leading robotics technologies: <strong>SubSLAM</strong>, a live 3D mapping system for subsea infrastructure, and the <strong>world-first autonomous offshore jacket inspection</strong> system.</p>
+          <p>Still hands-on with the classical foundations — SLAM, stereo vision, sensor fusion — that underpin that autonomy, with extensive experience in hardware-software integration and cross-functional collaboration with mechanical, electrical, and operations teams.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat"><span class="num">14+</span><span class="label">Years in robotics</span></div>
+          <div class="stat"><span class="num">6</span><span class="label">Patents</span></div>
+          <div class="stat"><span class="num">2</span><span class="label">World-firsts delivered</span></div>
+          <div class="stat"><span class="num">4</span><span class="label">Publications</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've built things</h2>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl-item current">
+          <div class="tl-date">Mar 2026 — Present</div>
+          <h3 class="tl-role">Technical Team Lead</h3>
+          <div class="tl-org">Rosenxt Group · United Kingdom (Remote)</div>
+          <p>Setting technical strategy and leading a cross-functional team for Rosenxt's autonomous subsea inspection programme, with a current focus on physical AI — agentic decision-making, learned behaviours, and semantic perception — alongside architecture, hiring, and delivery.</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Jul 2025 — Mar 2026</div>
+          <h3 class="tl-role">Principal Robotics, AI &amp; Computer Vision Engineer</h3>
+          <div class="tl-org">Rosenxt Group · United Kingdom (Remote)</div>
+          <p>Delivered SubSLAM's real-time 3D stereo-vision system and the world-first subsea autonomous inspection algorithm, combining vision, mapping, and ML.</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">2024 — 2025</div>
+          <h3 class="tl-role">High-Level Autonomy Team Lead</h3>
+          <div class="tl-org">ROVCO Subsea · United Kingdom (Remote)</div>
+          <p>Led the world-first autonomous inspection of an offshore jacket structure — architecture, sensor fusion, decision-making, and mission autonomy.</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">2020 — 2024</div>
+          <h3 class="tl-role">Principal Computer Vision Engineer</h3>
+          <div class="tl-org">ROVCO Subsea · United Kingdom (Remote)</div>
+          <p>Built Rovco's live 3D vision for ROVs and AUVs, improving camera pose accuracy and dense 3D reconstruction in challenging underwater imagery.</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">2017 — 2020</div>
+          <h3 class="tl-role">Senior Computer Vision Engineer</h3>
+          <div class="tl-org">ROVCO Subsea · United Kingdom (Remote)</div>
+          <p>Designed and delivered SubSLAM — Rovco's online 3D mapping sensor for subsea infrastructure.</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">2012 — 2017</div>
+          <h3 class="tl-role">Postgraduate Researcher</h3>
+          <div class="tl-org">Systems, Robotics and Vision Group, University of the Balearic Islands</div>
+          <p>Co-built the autonomous underwater robot "Turbot" — localization, stereo vision, loop-closing, and 3D reconstruction.</p>
+        </div>
+      </div>
+
+      <p class="timeline-more">+ earlier roles in software and control engineering (2009 – 2015) — see the <a href="cv/index.html">full CV ↗</a></p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Projects &amp; Patents</p>
+        <h2>Things I've shipped and invented</h2>
+      </div>
+
+      <div class="card-grid reveal">
+        <div class="card">
+          <span class="tag">Main Inventor</span>
+          <h3><a href="https://www.offshore-energy.biz/worlds-first-ai-powered-autonomous-subsea-vehicle-changing-underwater-inspection-and-survey-game-video/" target="_blank">World-First Autonomous Jacket Inspection</a></h3>
+          <p>AI-driven autonomous inspection of an offshore jacket structure — a world-first for subsea infrastructure.</p>
+          <div class="links"><a href="https://www.offshore-energy.biz/worlds-first-ai-powered-autonomous-subsea-vehicle-changing-underwater-inspection-and-survey-game-video/" target="_blank">Read more ↗</a></div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Main Inventor</span>
+          <h3><a href="https://youtu.be/R4PEVjXsoFY" target="_blank">SubSLAM — Live 3D Mapping</a></h3>
+          <p>Real-time stereo-vision 3D mapping sensor for subsea infrastructure inspection.</p>
+          <div class="links"><a href="https://youtu.be/R4PEVjXsoFY" target="_blank">Watch ↗</a></div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Research</span>
+          <h3>Stereo SLAM</h3>
+          <p>Stereo camera SLAM system from my ICRA'16 paper — Best Student Paper Award finalist.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Research</span>
+          <h3>Libhaloc</h3>
+          <p>Loop-closure detection system based on my Autonomous Robots journal paper.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Open Source</span>
+          <h3>ROS Visual Odometry</h3>
+          <p>Contributions to viso2 and fovis, two of ROS's most widely used visual odometers.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Open Source</span>
+          <h3>Camera Drivers</h3>
+          <p>Drivers for industrial stereo cameras used across the SRV group's AUV platforms.</p>
+          <div class="links">
+            <a href="https://github.com/srv/pg_spinnaker_camera" target="_blank">pg_spinnaker_camera ↗</a>
+            <a href="https://github.com/srv/prosilica_driver" target="_blank">prosilica_driver ↗</a>
           </div>
         </div>
-        <!-- /Page changer wrapper -->
       </div>
-      <!-- /Main Content -->
+
+      <div class="patents-block reveal">
+        <h3>Patents</h3>
+        <ul class="patents-list">
+          <li>
+            <span class="p-year">2024</span>
+            <span class="p-title"><strong>3D data structure for a subsea environment.</strong> P. L. Negre, M. Mangus. Pending.</span>
+            <a class="p-link" href="https://patents.google.com/patent/GB2641897A/en" target="_blank">GB2641897A ↗</a>
+          </li>
+          <li>
+            <span class="p-year">2023</span>
+            <span class="p-title"><strong>Computing device and method for mapping.</strong> P. L. Negre, E. D. Ruiz. Pending.</span>
+            <a class="p-link" href="https://patentimages.storage.googleapis.com/57/5b/6b/83501447cbddb4/EP4471722A1.pdf" target="_blank">EP4471722A1 ↗</a>
+          </li>
+          <li>
+            <span class="p-year">2021</span>
+            <span class="p-title"><strong>Computing device and method for video object detection.</strong> I. Wallace, P. L. Negre, L. Hill.</span>
+            <a class="p-link" href="https://register.epo.org/application?number=EP18204705&amp;tab=main" target="_blank">EP3651056 ↗</a>
+          </li>
+          <li>
+            <span class="p-year">2020</span>
+            <span class="p-title"><strong>Subsea surveying system.</strong> I. Wallace, L. Hill, P. L. Negre, N. Read.</span>
+            <a class="p-link" href="GB2582554.pdf" target="_blank">GB2582554 ↗</a>
+          </li>
+          <li>
+            <span class="p-year">2020</span>
+            <span class="p-title"><strong>Surveying system for surveying in harsh environments.</strong> I. Wallace, L. Hill, P. L. Negre, N. Read.</span>
+            <a class="p-link" href="EP3712558A1.pdf" target="_blank">EP3712558 ↗</a>
+          </li>
+          <li>
+            <span class="p-year">2019</span>
+            <span class="p-title"><strong>Subsea camera module and multi-camera system.</strong> I. Wallace, L. Hill, B. Allen, P. L. Negre.</span>
+            <a class="p-link" href="https://www.ipo.gov.uk/p-ipsum/Case/PublicationNumber/GB2570748" target="_blank">GB2570748 ↗</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/page-transition.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/jquery.shuffle.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.hoverdir.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Toolbox</h2>
+      </div>
 
-  </body>
+      <div class="skills-grid reveal">
+        <div class="skill-col">
+          <h4>AI &amp; Autonomy</h4>
+          <div class="pill-list">
+            <span class="pill">Agentic Decision-Making</span>
+            <span class="pill">VLA / Learned Behaviours</span>
+            <span class="pill">Semantic Perception</span>
+            <span class="pill">Python</span>
+            <span class="pill">PyTorch</span>
+            <span class="pill">TensorFlow</span>
+            <span class="pill">CUDA</span>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h4>Classical Robotics &amp; Perception</h4>
+          <div class="pill-list">
+            <span class="pill">ROS / ROS2</span>
+            <span class="pill">SLAM</span>
+            <span class="pill">Sensor Fusion</span>
+            <span class="pill">Stereo Vision</span>
+            <span class="pill">OpenCV</span>
+            <span class="pill">PCL</span>
+            <span class="pill">g2o</span>
+            <span class="pill">Ceres</span>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h4>Systems</h4>
+          <div class="pill-list">
+            <span class="pill">C++</span>
+            <span class="pill">Linux</span>
+            <span class="pill">Docker</span>
+            <span class="pill">NVIDIA Jetson</span>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h4>Also</h4>
+          <div class="pill-list">
+            <span class="pill">Rust</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">C#</span>
+            <span class="pill">Java</span>
+            <span class="pill">Matlab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-panel reveal">
+        <div>
+          <h2>Let's talk</h2>
+          <p>Based in Spain, working remote-only. Always happy to talk subsea autonomy, underwater perception, or scaling robotics teams.</p>
+        </div>
+        <ul class="contact-list">
+          <li><a href="mailto:pl.negre@outlook.com"><i class="fa fa-envelope"></i> pl.negre@outlook.com</a></li>
+          <li><a href="https://www.linkedin.com/in/pep-lluis-negre-a2674336/" target="_blank"><i class="fa fa-linkedin"></i> linkedin.com/in/pep-lluis-negre</a></li>
+          <li><a href="https://github.com/plnegre" target="_blank"><i class="fa fa-github"></i> github.com/plnegre</a></li>
+          <li><a href="cv/index.html"><i class="fa fa-file-text-o"></i> Full CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Pep Lluís Negre</span>
+      <a href="cv/index.html">CV</a>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
 </html>
