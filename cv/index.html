@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Pep Lluís Negre — CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="Pep Lluís Negre — Curriculum Vitae. Robotics, AI & Computer Vision engineering leader." />
+<meta name="keywords" content="plnegre, CV, resume, robotics, computer vision, underwater robotics, SLAM, autonomy" />
+<meta name="author" content="Pep Lluís Negre" />
+<link rel="icon" href="../favicon.ico">
+<style>
+  :root{
+    --accent: #a8583e;
+    --accent-dark: #8a4630;
+    --ink: #2b2b2b;
+    --ink-soft: #565049;
+    --muted: #7a736a;
+    --rule: #ddd2c4;
+    --bg: #fbf9f6;
+    --bg-card: #ffffff;
+    --link: #8a4630;
+    --max-width: 880px;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink: #ece7e0;
+      --ink-soft: #cfc7bb;
+      --muted: #a79d8f;
+      --rule: #4a4038;
+      --bg: #1c1815;
+      --bg-card: #221d19;
+      --link: #e0947c;
+      --accent: #e0947c;
+      --accent-dark: #d98368;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink: #ece7e0;
+    --ink-soft: #cfc7bb;
+    --muted: #a79d8f;
+    --rule: #4a4038;
+    --bg: #1c1815;
+    --bg-card: #221d19;
+    --link: #e0947c;
+    --accent: #e0947c;
+    --accent-dark: #d98368;
+  }
+  :root[data-theme="light"]{
+    --accent: #a8583e;
+    --accent-dark: #8a4630;
+    --ink: #2b2b2b;
+    --ink-soft: #565049;
+    --muted: #7a736a;
+    --rule: #ddd2c4;
+    --bg: #fbf9f6;
+    --bg-card: #ffffff;
+    --link: #8a4630;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+
+  .cv{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background: var(--bg-card);
+  }
+
+  .toolbar{
+    max-width: var(--max-width);
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .toolbar a{ color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+  .toolbar a:hover{ color: var(--link); }
+  .print-btn{
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    background: transparent;
+    padding: 0.45rem 0.9rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .print-btn:hover{ background: var(--accent); color: #fff; }
+
+  header.masthead{
+    text-align: center;
+    padding-bottom: 1.25rem;
+  }
+  .masthead img.avatar{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+    filter: grayscale(15%);
+  }
+  h1.name{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    font-size: 2rem;
+    margin: 0 0 0.35rem;
+    color: var(--ink);
+  }
+  .headline{
+    color: var(--accent);
+    font-size: 1.15rem;
+    margin: 0 0 0.6rem;
+  }
+  .contact-line{
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+  .contact-line a{ color: var(--link); text-decoration: none; }
+  .contact-line a:hover{ text-decoration: underline; }
+  .contact-line .sep{ color: var(--rule); margin: 0 0.5em; }
+
+  hr.rule{
+    border: none;
+    border-top: 2px solid var(--accent);
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  h2.section-title{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    color: var(--accent);
+    font-size: 1.35rem;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.35rem;
+    margin: 2.25rem 0 1rem;
+  }
+  section:first-of-type h2.section-title{ margin-top: 0; }
+
+  p{ margin: 0 0 0.9rem; }
+
+  .quick-roles{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+  }
+  .quick-roles td{ padding: 0.3rem 0.5rem 0.3rem 0; vertical-align: top; }
+  .quick-roles td.date{ white-space: nowrap; color: var(--muted); width: 8.5em; }
+  .quick-roles td.role{ color: var(--ink); }
+  .quick-roles td.role .company{ color: var(--muted); }
+
+  .entry{ margin-bottom: 1.5rem; }
+  .entry:last-child{ margin-bottom: 0; }
+  .entry-head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+  }
+  .entry-title{ font-weight: 700; font-size: 1.02rem; color: var(--ink); }
+  .entry-date{ color: var(--muted); font-size: 0.88rem; white-space: nowrap; }
+  .entry-org{ color: var(--link); font-style: italic; font-size: 0.95rem; margin-bottom: 0.35rem; }
+  .entry-org .loc{ color: var(--muted); font-style: normal; }
+  .entry p{ font-size: 0.95rem; color: var(--ink-soft); }
+
+  .cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2.5rem;
+  }
+  @media (max-width: 620px){
+    .cols{ grid-template-columns: 1fr; }
+  }
+
+  .skill-group{ margin-bottom: 1.1rem; }
+  .skill-group h4{
+    margin: 0 0 0.35rem;
+    font-size: 0.95rem;
+    color: var(--accent-dark);
+  }
+  .skill-group ul{ margin: 0; padding-left: 1.1rem; font-size: 0.92rem; color: var(--ink-soft); }
+  .skill-group p{ font-size: 0.92rem; color: var(--ink-soft); }
+
+  .pub{
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.9rem;
+  }
+  .pub .award{ font-weight: 700; color: var(--accent-dark); }
+
+  ul.patents{ list-style: none; margin: 0; padding: 0; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.patents li{ margin-bottom: 0.6rem; padding-left: 1rem; position: relative; }
+  ul.patents li::before{ content: "—"; position: absolute; left: 0; color: var(--accent); }
+
+  .portfolio-list{ font-size: 0.92rem; color: var(--ink-soft); }
+  .portfolio-list ul{ padding-left: 1.2rem; margin: 0.3rem 0 0.9rem; }
+  .portfolio-list li{ margin-bottom: 0.3rem; }
+  .portfolio-list ul ul{ margin-top: 0.3rem; }
+
+  footer.cv-footer{
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+  }
+
+  @media print{
+    body{ padding: 0; background: #fff; }
+    .toolbar{ display: none; }
+    .cv{ max-width: 100%; }
+    a{ color: inherit !important; text-decoration: none !important; }
+    :root{
+      --ink: #2b2b2b;
+      --ink-soft: #444;
+      --muted: #666;
+      --rule: #ccc;
+      --bg: #fff;
+      --bg-card: #fff;
+      --accent: #a8583e;
+      --accent-dark: #8a4630;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <a href="../index.html">← plnegre.github.io</a>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <div class="cv">
+
+    <header class="masthead">
+      <img class="avatar" src="../images/my_photo_25.jpeg" alt="Pep Lluís Negre">
+      <h1 class="name">PEP LLUÍS NEGRE</h1>
+      <p class="headline">Technical Team Lead — Autonomous Subsea Robotics</p>
+      <p class="contact-line">
+        Spain (remote only)
+        <span class="sep">·</span>
+        <a href="mailto:pl.negre@outlook.com">pl.negre@outlook.com</a>
+        <span class="sep">·</span>
+        <a href="https://plnegre.github.io" target="_blank">plnegre.github.io</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/pep-lluis-negre-a2674336/" target="_blank">linkedin.com/in/pep-lluis-negre</a>
+      </p>
+    </header>
+
+    <hr class="rule">
+
+    <section>
+      <h2 class="section-title">Profile</h2>
+
+      <p><strong>Robotics &amp; AI engineering leader with 14+ years building autonomous systems for harsh, real-world environments.</strong> Current focus is physical AI for subsea robotics — agentic decision-making, learned behaviours (VLA models), and semantic perception — setting technical strategy and leading a cross-functional team for Rosenxt's autonomous subsea inspection programme. Previously drove two world-leading robotics technologies: SubSLAM, a live 3D mapping system for subsea infrastructure, and the world-first autonomous offshore jacket inspection system.</p>
+
+      <p>Still hands-on with the classical foundations — SLAM, stereo vision, sensor fusion — that underpin that autonomy, alongside hardware-software integration and robot bring-up. Extensive cross-functional collaboration with mechanical, electrical, and operations teams. Named inventor on multiple robotics and perception patents.</p>
+
+      <table class="quick-roles">
+        <tr><td class="date">2026 – Present</td><td class="role">Technical Team Lead <span class="company">— Rosenxt Group, United Kingdom (Remote)</span></td></tr>
+        <tr><td class="date">2025 – 2026</td><td class="role">Principal Robotics, AI &amp; Computer Vision Engineer <span class="company">— Rosenxt Group, United Kingdom (Remote)</span></td></tr>
+        <tr><td class="date">2024 – 2025</td><td class="role">High-Level Autonomy Team Lead <span class="company">— ROVCO Subsea, United Kingdom (Remote)</span></td></tr>
+        <tr><td class="date">2020 – 2024</td><td class="role">Principal Computer Vision Engineer <span class="company">— ROVCO Subsea, United Kingdom (Remote)</span></td></tr>
+        <tr><td class="date">2017 – 2020</td><td class="role">Senior Computer Vision Engineer <span class="company">— ROVCO Subsea, United Kingdom (Remote)</span></td></tr>
+        <tr><td class="date">2012 – 2017</td><td class="role">Postgraduate Researcher <span class="company">— Systems, Robotics and Vision Group, University of the Balearic Islands, Spain</span></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Technical Team Lead</span>
+          <span class="entry-date">Mar 2026 – Present</span>
+        </div>
+        <div class="entry-org">Rosenxt Group <span class="loc">· United Kingdom (Remote)</span></div>
+        <p>Leading the technical direction of Rosenxt's autonomous subsea robotics programme for close-range asset inspection, with a current focus on physical AI — agentic decision-making, learned behaviours, and semantic perception — to turn a hard underwater autonomy problem into a product that inspects critical infrastructure reliably, at depth, without a human at the controls. Setting technical strategy: choosing the AI, autonomy, and perception approaches that take the programme from prototype to fielded system. Working closely with product and stakeholders so that requirements and engineering reality meet at the right point. Leading a cross-functional team across AI, robotics, simulation, software, DevOps and R&amp;D operations. Also responsible for how the team scales and hires, the processes that keep a growing team fast, and the budget requests and project documentation that keep the programme funded and legible to the business.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Principal Robotics, AI &amp; Computer Vision Engineer</span>
+          <span class="entry-date">2025 – Mar 2026</span>
+        </div>
+        <div class="entry-org">Rosenxt Group <span class="loc">· United Kingdom (Remote)</span></div>
+        <p>Delivered production-grade robotics software including SubSLAM's real-time 3D stereo-vision system and the world-first subsea autonomous inspection algorithm, combining vision, mapping and ML components. Built custom pipelines for point cloud processing, dense 3D reconstruction, and SLAM robust to visually degraded or GPS-denied environments; co-inventor on related patents.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">High-Level Autonomy Team Lead</span>
+          <span class="entry-date">2024 – 2025</span>
+        </div>
+        <div class="entry-org">ROVCO Subsea <span class="loc">· United Kingdom (Remote)</span></div>
+        <p>Led the development of world-class AI-driven subsea autonomy. Technically led and delivered the <a href="https://www.offshore-energy.biz/worlds-first-ai-powered-autonomous-subsea-vehicle-changing-underwater-inspection-and-survey-game-video/" target="_blank">world-first autonomous inspection</a> of an offshore jacket structure. Drove the end-to-end architecture and algorithmic design — from perception and sensor fusion to decision-making and mission autonomy. Led a multidisciplinary tech team, set technical direction, and ensured delivery of high-impact, production-grade solutions.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Principal Computer Vision Engineer</span>
+          <span class="entry-date">2020 – 2024</span>
+        </div>
+        <div class="entry-org">ROVCO Subsea <span class="loc">· United Kingdom (Remote)</span></div>
+        <p>Researched and prototyped emerging computer vision technologies to guide subsea exploration and inspection. Designed and developed the core of Rovco's cutting-edge live 3D vision for ROVs and AUVs. Tackled challenging underwater imagery problems to keep improving camera pose accuracy and dense 3D models.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Senior Computer Vision Engineer</span>
+          <span class="entry-date">2017 – 2020</span>
+        </div>
+        <div class="entry-org">ROVCO Subsea <span class="loc">· United Kingdom (Remote)</span></div>
+        <p>Designed online 3D underwater mapping algorithms, based on an accurate Visual-SLAM positioning system and semi-dense 3D reconstructions. Developed cutting-edge solutions for reliable and impressive 3D underwater reconstructions, executed online during the robot mission. Main contributor and inventor of Rovco's <a href="https://youtu.be/R4PEVjXsoFY" target="_blank">SubSLAM online 3D mapping</a> sensor for subsea infrastructure. Delivered the most advanced subsea stereo camera system to date.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Postgraduate Researcher</span>
+          <span class="entry-date">2012 – 2017</span>
+        </div>
+        <div class="entry-org">Systems, Robotics and Vision Group, University of the Balearic Islands <span class="loc">· Spain</span></div>
+        <p>Co-responsible for the entire platform (software and hardware) of the autonomous underwater robot "Turbot". In charge of the whole localization pipeline based on various sensors: IMU, DVL, USBL, GPS and two stereo cameras. Specialized in stereo localization, loop-closing detection, and 3D reconstruction of the environment, along with the tools to visualize it. Responsible for the design and development of the vehicle's operating interface, based on HTML5, the Google Maps API, and Rosbridge.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">CEO at Binibook.com</span>
+          <span class="entry-date">2012 – 2015</span>
+        </div>
+        <div class="entry-org">Binibook S.L.</div>
+        <p>Led a platform to write and distribute books online. In charge of the website and apps developed for iOS and Android. Created value, managed the team, and kept developing code in HTML5, JavaScript, CSS, PHP, Node.js, Xcode and Java.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Software Developer</span>
+          <span class="entry-date">2011 – 2012</span>
+        </div>
+        <div class="entry-org">Sampol Comunications S.L.</div>
+        <p>Developed drivers for IAS/Wonderware, cameras, relays, and many other sensors for factories and intelligent houses. Implemented power monitoring systems to improve building efficiency with robust web front-ends and databases. Responsible for the project to automate the reading of water and electricity meters for the Port of Palma de Mallorca.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Control Engineer</span>
+          <span class="entry-date">2009 – 2011</span>
+        </div>
+        <div class="entry-org">Alstom Power S.L.U.</div>
+        <p>Responsible for the control design and tuning of the ECO74 and ECO80 wind turbines. Specialized in system identification and fault-tolerant control in adverse weather conditions.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Education</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Master's Degree in Automation and Robotics</span>
+          <span class="entry-date">2008 – 2010</span>
+        </div>
+        <div class="entry-org">University of Catalonia (UPC) <span class="loc">· Spain</span></div>
+        <p>Advanced control techniques. Mobile robotics. Computer vision.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Degree in Industrial Engineering — Industrial Electronics</span>
+          <span class="entry-date">2004 – 2008</span>
+        </div>
+        <div class="entry-org">University of the Balearic Islands <span class="loc">· Spain</span></div>
+        <p>Computer vision. Robotics. Electronics. Control theory.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">High School Diploma — Science &amp; Technology</span>
+          <span class="entry-date">2002 – 2004</span>
+        </div>
+        <div class="entry-org">IES Guillem Colom Casasnovas <span class="loc">· Spain</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <div class="cols">
+        <div>
+          <div class="skill-group">
+            <h4>AI &amp; Autonomy</h4>
+            <ul>
+              <li>Agentic decision-making</li>
+              <li>Learned behaviours (VLA models)</li>
+              <li>Semantic perception</li>
+              <li>Python, PyTorch, TensorFlow, CUDA</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4>Classical Robotics &amp; Perception</h4>
+            <ul>
+              <li>ROS / ROS2</li>
+              <li>SLAM &amp; sensor fusion</li>
+              <li>Stereo vision</li>
+              <li>OpenCV, PCL, g2o, Ceres</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-group">
+            <h4>Systems &amp; Deployment</h4>
+            <ul>
+              <li>C++ (production robotics systems)</li>
+              <li>Linux (robot deployment)</li>
+              <li>Docker (robot + tooling environments)</li>
+              <li>NVIDIA Jetson / embedded compute</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4>Also</h4>
+            <p>Experience working in mixed C++ / Rust codebases. Background in web, C#, Java, TypeScript and Matlab.</p>
+          </div>
+
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <p>English &amp; Spanish</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Relevant Publications</h2>
+
+      <p class="pub">P. L. Negre, F. Bonin-Font, G. Oliver. <em>Global Image Signature for Visual Loop-Closure Detection.</em> Autonomous Robots, Springer US, vol. 40, pp. 1403–1417, December 2016.</p>
+
+      <p class="pub">P. L. Negre, F. Bonin-Font, G. Oliver. <em>Cluster-Based Loop Closing Detection for Underwater SLAM in Feature-Poor Regions.</em> IEEE International Conference on Robotics and Automation (ICRA), Stockholm, Sweden, 2016. <span class="award">Best Student Paper Award Finalist.</span></p>
+
+      <p class="pub">P. L. Negre, F. Bonin-Font, M. Massot, G. Oliver. <em>Stereo-Vision Graph-SLAM for Robust Navigation of the AUV SPARUS II.</em> IFAC Workshop on Navigation, Guidance and Control of Underwater Vehicles (NGCUV), Girona, 2015.</p>
+
+      <p class="pub">P. L. Negre, F. Bonin-Font, G. Oliver. <em>Stereo Graph-SLAM for Autonomous Underwater Vehicles.</em> Intelligent Autonomous Systems 13 (Proceedings of the 13th International Conference on Intelligent Autonomous Systems, IAS13), Padova/Venice, pp. 351–360, 2014.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Patents</h2>
+      <ul class="patents">
+        <li>P. L. Negre, M. Maynard. 2024. <em>3D data structure for a subsea environment.</em> <a href="https://patents.google.com/patent/GB2641897A/en" target="_blank">GB2641897A</a>. Filed Jun 17, 2024, published Dec 24, 2025 (pending).</li>
+        <li>P. L. Negre, E. D. Ruiz. 2023. <em>Computing device and method for mapping.</em> <a href="https://patentimages.storage.googleapis.com/57/5b/6b/83501447cbddb4/EP4471722A1.pdf" target="_blank">EP4471722A1</a>. Filed May 31, 2023, published Dec 4, 2024 (pending).</li>
+        <li>I. Wallace, P. L. Negre, L. Hill. 2021. <em>Computing device and method for video object detection.</em> <a href="https://register.epo.org/application?number=EP18204705&amp;tab=main" target="_blank">EP3651056</a>. Filed Nov 6, 2018, issued Mar 28, 2021.</li>
+        <li>I. Wallace, L. Hill, P. L. Negre, N. Read. 2020. <em>Subsea surveying system.</em> <a href="../GB2582554.pdf" target="_blank">GB2582554</a>. Filed Mar 21, 2019, issued Sep 30, 2020.</li>
+        <li>I. Wallace, L. Hill, P. L. Negre, N. Read. 2020. <em>Surveying system for surveying in harsh environments.</em> <a href="../EP3712558A1.pdf" target="_blank">EP3712558</a>. Filed Mar 21, 2019, issued Sep 23, 2020.</li>
+        <li>I. Wallace, L. Hill, B. Allen, P. L. Negre. 2019. <em>Subsea camera module and multi-camera system.</em> <a href="https://www.ipo.gov.uk/p-ipsum/Case/PublicationNumber/GB2570748" target="_blank">GB2570748</a>. Filed Sep 4, 2018, issued Aug 7, 2019.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-list">
+        <p>Author, inventor, or main contributor of:</p>
+        <ul>
+          <li>World-first AI-driven <a href="https://www.offshore-energy.biz/worlds-first-ai-powered-autonomous-subsea-vehicle-changing-underwater-inspection-and-survey-game-video/" target="_blank">autonomous subsea jacket inspection</a> (main inventor).</li>
+          <li><a href="https://youtu.be/R4PEVjXsoFY" target="_blank">SubSLAM live 3D mapping</a> for subsea infrastructure (main inventor).</li>
+          <li>Stereo Slam — a stereo camera SLAM system, based on my ICRA'16 paper. Nominated for the Best Student Paper Award (author).</li>
+          <li>Libhaloc — a loop-closure detection system, based on my Autonomous Robots journal paper (author).</li>
+          <li>Contributions to ROS's most popular visual odometers: viso2 and fovis.</li>
+          <li>3D mapping and reconstruction:
+            <ul>
+              <li>Rema (private repo) — a full registration and mapping library for stereo cameras, using PnP for image-to-image registration, g2o for graph optimization, and Ceres Solver for bundle adjustment.</li>
+              <li>Uware — a simple tool for image-to-image registration, based on PnP and ICP.</li>
+            </ul>
+          </li>
+          <li>3D visualization:
+            <ul>
+              <li>Pointcloud web viewer — a 3D point cloud web viewer.</li>
+            </ul>
+          </li>
+          <li>Camera drivers: <a href="https://github.com/srv/pg_spinnaker_camera" target="_blank">pg_spinnaker_camera</a> and <a href="https://github.com/srv/prosilica_driver" target="_blank">prosilica_driver</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="cv-footer">
+      <p>Last updated July 2026</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
