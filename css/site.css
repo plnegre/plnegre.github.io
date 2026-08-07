@@ -159,6 +159,7 @@ a{ color: var(--accent-soft); }
   gap: 3rem;
   align-items: center;
 }
+.hero .container > *{ min-width: 0; }
 @media (max-width: 900px){
   .hero .container{ grid-template-columns: 1fr; }
 }
